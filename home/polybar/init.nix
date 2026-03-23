@@ -153,7 +153,7 @@ pkgs,
             "inherit" = "network-base";
             interface-type = "wireless";
 
-            label-connected = "%{F#F0C674}%ifname%%{F-} %essid% %local_ip%";
+            label-connected = "%{F#689d6a}%ifname%%{F-} %essid% %local_ip%";
         };
 
         "module/eth" = {
