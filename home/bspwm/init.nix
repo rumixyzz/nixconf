@@ -36,7 +36,7 @@ pkgs,
 		enable = true;
 		keybindings = {
 			"super + Return" = "alacritty";
-			"super + p" = "dmenu_run";
+			"super + p" = "dmenu_run -sb \"#d65d0e\" -sf \"#282828\" -nb \"#282828\" -nf \"#ebdbb2\" -fn \"monospace-14\"";
 
 			"super + Escape" = "pkill -USR1 sxhkd";
 
