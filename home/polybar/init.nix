@@ -12,7 +12,7 @@ pkgs,
             background = "#282828";
             background-alt = "#3c3836";
             foreground = "#ebdbb2";
-            primary = "#458588";
+            primary = "#d65d0e";
             secondary = "#689d6a";
             alert = "#cc241d";
             disabled = "#3c3836";
