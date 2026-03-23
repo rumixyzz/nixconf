@@ -4,7 +4,6 @@ pkgs,
 }: {
 	environment.systemPackages = with pkgs; [
 		nerd-fonts.meslo-lg
-		joypixels
+		nerd-fonts.jetbrains-mono
 	];
-	nixpkgs.config.joypixels.acceptLicense = true;
 }
