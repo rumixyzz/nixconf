@@ -21,14 +21,14 @@ pkgs,
         "bar/example" = {
             width = "100%";
             height = "24pt";
-            radius = 6;
+            radius = 0;
 
             background = "\${colors.background}";
             foreground = "\${colors.foreground}";
 
             line-size = "3pt";
 
-            border-size = "4pt";
+            border-size = "0pt";
             border-color = "#00000000";
 
             padding-left = 0;
@@ -42,7 +42,7 @@ pkgs,
             font-0 = "monospace;2";
 
             modules-left = "xworkspaces xwindow";
-            modules-right = "filesystem pulseaudio xkeyboard memory cpu wlan eth date";
+            modules-right = "filesystem pulseaudio xkeyboard memory date";
 
             cursor-click = "pointer";
             cursor-scroll = "ns-resize";
@@ -54,6 +54,12 @@ pkgs,
             type = "internal/tray";
             format-margin = "8pt";
             tray-spacing = "16pt";
+        };
+
+        "module/battery" = {
+            type = "internal/battery";
+            battery = "BAT0";
+            adapter = "ADP1";
         };
 
         "module/xworkspaces" = {
@@ -123,7 +129,7 @@ pkgs,
             type = "internal/memory";
             interval = 2;
 
-            format-prefix = "RAM ";
+            format-prefix = " ";
             format-prefix-foreground = "\${colors.primary}";
 
             label = "%percentage_used:2%%";
@@ -167,7 +173,7 @@ pkgs,
             type = "internal/date";
             interval = 1;
 
-            date = "%H:%M";
+            date = "%I:%M %p";
             date-alt = "%Y-%m-%d %H:%M:%S";
 
             label = "%date%";
