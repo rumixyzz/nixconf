@@ -13,13 +13,13 @@ pkgs,
 	};
 
 	imports = [
-		./home/bspwm/init.nix
-		./home/zsh/init.nix
-		./home/fontconfig/init.nix
 		./home/alacritty/init.nix
+		./home/fontconfig/init.nix
 		./home/neovim/init.nix
-		./home/xinit/init.nix
-		./home/polybar/init.nix
 		./home/packages.nix
+		./home/polybar/init.nix
+		./home/xinit/init.nix
+		./home/zsh/init.nix
+        ./home/bspwm/init.nix
 	];
 }
