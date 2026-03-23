@@ -4,6 +4,9 @@ pkgs,
 ...
 }: {
     services.polybar.enable = true;
+    services.polybar.script = ''
+        polybar example &
+    '';
     services.polybar.settings = {
         "colors" = {
             background = "#282A2E";
