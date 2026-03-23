@@ -9,5 +9,6 @@
       xsel
       xset
       dmenu
+      hsetroot
   ];
 }
