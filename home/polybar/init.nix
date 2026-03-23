@@ -9,13 +9,13 @@ pkgs,
     '';
     services.polybar.settings = {
         "colors" = {
-            background = "#282A2E";
-            background-alt = "#373B41";
-            foreground = "#C5C8C6";
-            primary = "#F0C674";
-            secondary = "#8ABEB7";
-            alert = "#A54242";
-            disabled = "#707880";
+            background = "#282828";
+            background-alt = "#3c3836";
+            foreground = "#ebdbb2";
+            primary = "#458588";
+            secondary = "#689d6a";
+            alert = "#cc241d";
+            disabled = "#3c3836";
         };
 
         "bar/example" = {
