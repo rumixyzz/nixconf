@@ -87,7 +87,7 @@ pkgs,
 
             mount-0 = "/";
 
-            label-mounted = "%{F#F0C674}%mountpoint%%{F-} %percentage_used%%";
+            label-mounted = "%{F#689d6a}%mountpoint%%{F-} %percentage_used%%";
             label-unmounted = "%mountpoint% not mounted";
             label-unmounted-foreground = "\${colors.disabled}";
         };
@@ -146,7 +146,7 @@ pkgs,
             format-connected = "<label-connected>";
             format-disconnected = "<label-disconnected>";
 
-            label-disconnected = "%{F#F0C674}%ifname%%{F#707880} disconnected";
+            label-disconnected = "%{F#689d6a}%ifname%%{F#707880} disconnected";
         };
 
         "module/wlan" = {
