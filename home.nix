@@ -16,5 +16,6 @@ pkgs,
 		./home/bspwm/init.nix
 		./home/zsh/init.nix
 		./home/fontconfig/init.nix
+		./home/alacritty/init.nix
 	];
 }
