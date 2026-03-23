@@ -12,4 +12,6 @@ pkgs,
       tree
     ];
   };
+
+  services.getty.autologinUser = "rumi";
 }
