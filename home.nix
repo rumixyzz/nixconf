@@ -17,5 +17,6 @@ pkgs,
 		./home/zsh/init.nix
 		./home/fontconfig/init.nix
 		./home/alacritty/init.nix
+		./home/neovim/init.nix
 	];
 }
