@@ -19,5 +19,6 @@ pkgs,
 		./home/alacritty/init.nix
 		./home/neovim/init.nix
 		./home/xinit/init.nix
+		./home/packages.nix
 	];
 }
