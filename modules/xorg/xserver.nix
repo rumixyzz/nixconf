@@ -10,11 +10,6 @@
             lightdm.enable = false;
             startx.enable = true;
         };
+        xkb.layout = "us";
     };
-    environment.systemPackages = with pkgs; [
-        xinit
-        xsel
-        xset
-        dmenu
-    ];
 }
