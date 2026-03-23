@@ -6,4 +6,5 @@ pkgs,
 		nerd-fonts.meslo-lg
 		joypixels
 	];
+	nixpkgs.config.joypixels.acceptLicense = true;
 }
