@@ -14,5 +14,6 @@ pkgs,
 
 	imports = [
 		./home/bspwm/init.nix
+		./home/zsh/init.nix
 	];
 }
