@@ -12,6 +12,10 @@ pkgs,
 
 			border_width = 2;
 			window_gap = 12;
+
+            normal_border_color = "#282828";
+            active_border_color = "#689d6a";
+            focused_border_color = "#d65d0e";
 		};
 		monitors = {
 			eDP-1 = [
