@@ -7,7 +7,7 @@ pkgs,
 		enable = true;
 		oh-my-zsh = {
 			enable = true;
-			theme = "darkblood";
+			theme = "robbyrussell";
 			plugins = [ "git" "aliases" ];
 		};
 	};
