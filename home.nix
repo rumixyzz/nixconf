@@ -15,5 +15,6 @@ pkgs,
 	imports = [
 		./home/bspwm/init.nix
 		./home/zsh/init.nix
+		./home/fontconfig/init.nix
 	];
 }
