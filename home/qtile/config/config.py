@@ -123,7 +123,7 @@ extension_defaults = widget_defaults.copy()
 logo = os.path.join(os.path.dirname(libqtile.resources.__file__), "logo.png")
 screens = [
     Screen(
-        bottom=top.Bar(
+        top=bar.Bar(
             [
                 widget.GroupBox(),
                 widget.WindowName(),
