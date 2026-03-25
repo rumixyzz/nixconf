@@ -163,7 +163,7 @@ screens = [
                 widget.Clock(format="%a %I:%M %p", **rect("#3c3836")),
                 widget.Spacer(length=4),
             ],
-            40,
+            38,
             background="#282828",
         ),
         background="#000000",
