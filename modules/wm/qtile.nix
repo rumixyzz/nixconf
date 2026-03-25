@@ -3,6 +3,10 @@ config,
 pkgs,
 ...
 }: {
-    services.xserver.windowManager.qtile.enable = true;
-    environment.systemPackages = with pkgs.python313Packages; [ qtile-extras ];
+    services.xserver.windowManager.qtile = {
+        enable = true;
+        extraPackages = pythonPackages: with pythonPackages; [
+            qtile-extras
+        ];
+    };
 }
