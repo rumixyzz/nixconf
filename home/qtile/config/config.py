@@ -131,7 +131,7 @@ def rect(color):
                 colour=color,
                 radius=0,
                 filled=True,
-                padding_y=6,
+                padding_y=4,
                 group=True,
             )
         ],
