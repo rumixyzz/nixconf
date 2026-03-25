@@ -6,6 +6,10 @@ pkgs,
 	programs.alacritty = {
 		enable = true;
 		settings = {
+            window = {
+                opacity = 0.9;
+                padding = { x = 4; y = 4; };
+            };
 			colors.primary = {
 				background = "#282828";
 				foreground = "#ebdbb2";
