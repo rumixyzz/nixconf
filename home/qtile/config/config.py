@@ -150,15 +150,15 @@ screens = [
                     font="monospace Bold",
                     **rect("#3c3836"),
                     ),
-                widget.Spacer(length=8)
+                widget.Spacer(length=8),
                 widget.WindowName(**rect("#3c3836")),
 
                 widget.Systray(),
-                widget.Spacer(length=8)
+                widget.Spacer(length=8),
                 widget.Battery(format="{percent:2.0%}", **rect("#3c3836")),
-                widget.Spacer(length=8)
+                widget.Spacer(length=8),
                 widget.PulseVolume(**rect("#3c3836")),
-                widget.Spacer(length=8)
+                widget.Spacer(length=8),
                 widget.Clock(format="%a %I:%M %p", **rect("#3c3836")),
             ],
             38,
