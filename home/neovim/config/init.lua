@@ -4,6 +4,8 @@ vim.opt.rnu = true;
 vim.opt.sw = 4;
 vim.opt.ts = 4;
 vim.opt.et = true;
+vim.opt.fcs = { eob = " " };
+vim.opt.hls = false;
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { 'nix','lua','python' },
