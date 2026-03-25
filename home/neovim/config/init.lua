@@ -10,6 +10,6 @@ vim.api.nvim_create_autocmd('FileType', {
   callback = function() vim.treesitter.start() end,
 })
 
-require("gruvbox").setup({enable_transparency = true})
+require("gruvbox").setup({transparency_mode = true})
 vim.cmd.color("gruvbox")
 require("lualine").setup()
