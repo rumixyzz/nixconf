@@ -6,6 +6,9 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+from qtile_extras import widget
+from qtile_extras.widget.decorations import RectDecoration
+
 mod = "mod4"
 terminal = guess_terminal()
 
@@ -121,6 +124,20 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
+def rect(color):
+    return {
+        "decorations": [
+            RectDecoration(
+                colour=color,
+                radius=0,
+                filled=True,
+                padding_y=4,
+                group=True,
+            )
+        ],
+        "padding": 10,
+    }
+
 screens = [
     Screen(
         top=bar.Bar(
@@ -128,15 +145,16 @@ screens = [
                 widget.GroupBox(
                     highlight_method="text",
                     active="#665c54",
-                    inactive="#3c3836",
+                    inactive="#504945",
                     this_current_screen_border="#d65d0e",
+                    **rect("#3c3836"),
                     ),
-                widget.WindowName(),
+                widget.WindowName(**rect("#3c3836")),
 
                 widget.Systray(),
-                widget.Battery(format="{percent:2.0%}"),
-                widget.PulseVolume(),
-                widget.Clock(format="%a %I:%M %p"),
+                widget.Battery(format="{percent:2.0%}", **rect("#3c3836")),
+                widget.PulseVolume(**rect("#3c3836")),
+                widget.Clock(format="%a %I:%M %p", **rect("#3c3836")),
             ],
             38,
             background="#282828",
