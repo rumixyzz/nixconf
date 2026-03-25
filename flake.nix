@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = { nixpkgs, import-tree, home-manager, nix-flatpak ... } @inputs: {
+  outputs = { nixpkgs, import-tree, home-manager, nix-flatpak, ... } @inputs: {
     nixosConfigurations.domus = nixpkgs.lib.nixosSystem {
         modules = [
                 ./configuration.nix
