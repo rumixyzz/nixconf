@@ -114,36 +114,26 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="sans",
-    fontsize=12,
-    padding=3,
+    font="monospace",
+    fontsize=16,
+    padding=6,
 )
 extension_defaults = widget_defaults.copy()
 
 logo = os.path.join(os.path.dirname(libqtile.resources.__file__), "logo.png")
 screens = [
     Screen(
-        bottom=bar.Bar(
+        bottom=top.Bar(
             [
-                widget.CurrentLayout(),
                 widget.GroupBox(),
-                widget.Prompt(),
                 widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-                # widget.StatusNotifier(),
+
                 widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.QuickExit(),
+                widget.Battery(format="{percent:2.0%}"),
+                widget.Volume(),
+                widget.Clock(format="%a %I:%M %p"),
             ],
-            24,
+            38,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
