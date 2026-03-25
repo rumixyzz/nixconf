@@ -131,7 +131,7 @@ def rect(color):
                 colour=color,
                 radius=0,
                 filled=True,
-                padding_y=4,
+                padding_y=8,
                 group=True,
             )
         ],
@@ -142,6 +142,7 @@ screens = [
     Screen(
         top=bar.Bar(
             [
+                widget.Spacer(length=4),
                 widget.GroupBox(
                     highlight_method="text",
                     active="#665c54",
@@ -160,6 +161,7 @@ screens = [
                 widget.PulseVolume(**rect("#3c3836")),
                 widget.Spacer(length=8),
                 widget.Clock(format="%a %I:%M %p", **rect("#3c3836")),
+                widget.Spacer(length=4),
             ],
             38,
             background="#282828",
