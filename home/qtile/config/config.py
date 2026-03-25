@@ -130,7 +130,7 @@ screens = [
 
                 widget.Systray(),
                 widget.Battery(format="{percent:2.0%}"),
-                widget.Volume(),
+                widget.PulseVolume(),
                 widget.Clock(format="%a %I:%M %p"),
             ],
             38,
