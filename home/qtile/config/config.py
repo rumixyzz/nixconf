@@ -112,8 +112,9 @@ for i in groups:
 
 layouts = [
     layout.Columns(
+        border_width=2,
         border_focus="#d65d0e",
-        border_width=4
+        border_normal="#282828",
         ),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
