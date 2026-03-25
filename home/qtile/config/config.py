@@ -162,7 +162,7 @@ screens = [
                     **rect("#3c3836"),
                     ),
                 widget.Spacer(length=4),
-                widget.WindowName(**rect("#3c3836")),
+                widget.WindowName(**rect("#3c3836"), empty_group_string=""),
 
                 widget.Systray(),
                 widget.Spacer(length=4),
