@@ -117,6 +117,7 @@ widget_defaults = dict(
     font="monospace",
     fontsize=16,
     padding=6,
+    foreground="#ebdbb2",
 )
 extension_defaults = widget_defaults.copy()
 
