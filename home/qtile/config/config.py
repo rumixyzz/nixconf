@@ -156,10 +156,16 @@ screens = [
 
                 widget.Systray(),
                 widget.Spacer(length=8),
+
+                widget.TextBox(text="󰁾", **rect("#cc241d"), foreground="#282828"),
                 widget.Battery(format="{percent:2.0%}", **rect("#3c3836")),
                 widget.Spacer(length=8),
+
+                widget.TextBox(text="󰕾", **rect("#458588"), foreground="#282828"),
                 widget.PulseVolume(**rect("#3c3836")),
                 widget.Spacer(length=8),
+
+                widget.Clock(format="%a", **rect("#689d6a"), foreground="#282828"),
                 widget.Clock(format="%a %I:%M %p", **rect("#3c3836")),
                 widget.Spacer(length=4),
             ],
