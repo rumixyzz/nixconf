@@ -7,5 +7,6 @@ pkgs,
         librewolf
         pamixer
         gh
+        picom
     ];
 }
