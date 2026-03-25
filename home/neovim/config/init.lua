@@ -6,7 +6,7 @@ vim.opt.ts = 4;
 vim.opt.et = true;
 
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'nix','lua' },
+  pattern = { 'nix','lua','python' },
   callback = function() vim.treesitter.start() end,
 })
 
