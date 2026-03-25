@@ -147,13 +147,18 @@ screens = [
                     active="#665c54",
                     inactive="#504945",
                     this_current_screen_border="#d65d0e",
+                    font="monospace Bold",
                     **rect("#3c3836"),
                     ),
+                widget.Spacer(length=8)
                 widget.WindowName(**rect("#3c3836")),
 
                 widget.Systray(),
+                widget.Spacer(length=8)
                 widget.Battery(format="{percent:2.0%}", **rect("#3c3836")),
+                widget.Spacer(length=8)
                 widget.PulseVolume(**rect("#3c3836")),
+                widget.Spacer(length=8)
                 widget.Clock(format="%a %I:%M %p", **rect("#3c3836")),
             ],
             38,
